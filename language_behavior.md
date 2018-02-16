@@ -66,6 +66,8 @@ Sequences.
 
 Mei, Bansal and Walter. AAAI 16.
 
+https://arxiv.org/pdf/1506.04089.pdf
+
 First simple neural instruction follower for low-level actions: learns an
 instruction follower with seq2seq+attention and gets pretty good performance.
 The dataset is tiny by neural standards, so kind of surprising that this works
@@ -196,3 +198,9 @@ Deep RL through a value iteration network, using side-information from text to
 predict representations of entities (from which it can be inferred how they
 move, what rewards they provide, etc.). Faster learning on the training task,
 and fast adaptation to held-out tasks.
+
+---
+
+TODO:
+
+http://h2r.cs.brown.edu/wp-content/uploads/2017/06/arumugam17.pdf
