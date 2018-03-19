@@ -139,6 +139,19 @@ parse-tree-to-NMN-layout heuristic from the original NMN paper.
 
 ---
 
+MAttNet: Modular Attention Network for Referring Expression Comprehension
+
+Yu, Lin, Shen, Yang, Lu, Bansal and Berg. CVPR 18.
+
+https://arxiv.org/abs/1801.08186
+
+Quite similar to CMN paper; the main distinction here is that pieces of the
+predicate structure can themselves be weighted (which basically corresponds to a
+soft selection of all the combinatorially many substructures that can be formed
+from the fixed initial layout).
+
+---
+
 ## Interpretability
 
 Transparency by Design: Closing the Gap Between Performance and Interpretability
