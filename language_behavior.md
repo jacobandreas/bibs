@@ -93,7 +93,7 @@ implementation of a Rational Speech Acts model (Frank & Goodman 12), and gives
 good performance on both instruction following and generation. Not quite as good
 as semantic parsers on SAIL, but better on a bunch of other tasks.
 
---
+---
 
 Grounded Language Learning in a Simulated 3D World
 

@@ -34,9 +34,9 @@ high-level structures we use for real vision tasks is tiny. Though VQA results
 were better than the baseline, they were just barely so, and in hindsight
 probably for reasons unrelated to the NMN part.
 
-## Question answering / structure prediction
-
 ---
+
+## Question answering / structure prediction
 
 Learning to Compose Neural Networks for Question Answering.
 
