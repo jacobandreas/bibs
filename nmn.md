@@ -4,7 +4,7 @@ Modular, dynamically-structured neural nets for compositional reasoning.
 
 ## Basics
 
-Neural Module Networks ("NMN").
+Neural Module Networks. [NMN]
 
 Andreas, Rohrbach, Darrell and Klein. CVPR 16.
 
@@ -55,7 +55,7 @@ from prospective network layouts.
 
 ---
 
-Inferring and Executing Programs for Visual Reasoning ("PG+EE").
+Inferring and Executing Programs for Visual Reasoning. [PG+EE]
 
 Johnson, Hariharan, van der Maaten, Hoffman, Fei-Fei, Zitnick and Girshick. ICCV
 17.
@@ -79,8 +79,8 @@ train this model on any real-world dataset.
 
 ---
 
-Learning to Reason: End-to-End Module Networks for Visual Question Answering
-("N2NMN").
+Learning to Reason: End-to-End Module Networks for Visual Question Answering.
+[N2NMN]
 
 Hu, Andreas, Rohrbach, Darrell and Saenko. ICCV 17.
 
@@ -103,7 +103,7 @@ data.
 ## Referring expression grounding / energy
 
 Modeling Relationships in Referential Expressions with Compositional Modular
-Networks ("CMN").
+Networks. [CMN]
 
 Hu, Rohrbach, Andreas, Darrell and Saenko. CVPR 17.
 
@@ -155,14 +155,34 @@ from the fixed initial layout).
 ## Interpretability
 
 Transparency by Design: Closing the Gap Between Performance and Interpretability
-in Visual Reasoning ("TbD").
+in Visual Reasoning. [TbD]
 
 Mascharka, Tran, Solaski and Majumdar. CVPR 18.
 
-https://arxiv.org/pdf/1803.05268.pdf
+https://arxiv.org/abs/1803.05268
 
 Improved performance on CLEVR using attentional modules similar to those used in
 the N2NMN paper. (But hard, supervised assignment of words to structure pieces
 as in PG+EE.) A little over-engineered around CLEVR, but a nice discussion of
 how the transparency / debuggability of the NMN framework makes it easy to
 iterate on modeling and learning experiments.
+
+--
+
+## Synthesis
+
+Modular Generative Adversarial Networks.
+
+Zhao, Chang, Jie and Sigal.
+
+https://arxiv.org/abs/1804.03343
+
+Module nets for generative modeling. Implements a conditional GAN as an encoder,
+a sequence of modular transformations on the latent code, and a decoder. The
+encoded representation preserves spatial information, so we can use an attention
+mechanism like the one in the original question answering papers to localize the
+transformation to particular regions of the input image. Synthesized images look
+comparable to SOTA; numerical results are better but I don't really know how
+GAN evaluations are supposed to work. In principle you should be able to use
+this to learn sequences of transformations that don't commute, but all the
+experiments in the paper are just adding / removing attributes.
