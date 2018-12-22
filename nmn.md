@@ -152,6 +152,25 @@ from the fixed initial layout).
 
 ---
 
+Neural Compositional Denotational Semantics for Question Answering
+
+Gupta and Lewis. EMNLP 2018.
+
+https://arxiv.org/abs/1808.09942
+
+Totally different way to fdoing structure discovery from scratch: builds a
+complete parse-chart-shaped NN according to the CKY recurrence (sort of like Le
+and Zuidema, EMNLP 18), with soft gating to pick which descendants actually get
+used. Works through the kinds of types and operators you need to assign an NMN
+to every span of the input question (requires a few more pieces than just the
+attentions &larr; attentions and attentions &larr; truth values). Can solve
+structure discovery from scratch on symbolic world representations with either
+fake language (CLEVR) or real (GENx), even when the test set features more
+complex structures than the training set. No experiments on more complex
+groundings.
+
+---
+
 ## Interpretability
 
 Transparency by Design: Closing the Gap Between Performance and Interpretability
@@ -167,7 +186,7 @@ as in PG+EE.) A little over-engineered around CLEVR, but a nice discussion of
 how the transparency / debuggability of the NMN framework makes it easy to
 iterate on modeling and learning experiments.
 
---
+---
 
 ## Synthesis
 
