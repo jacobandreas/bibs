@@ -36,7 +36,7 @@ probably for reasons unrelated to the NMN part.
 
 ---
 
-## Question answering / structure prediction
+## Question answering / layout prediction
 
 Learning to Compose Neural Networks for Question Answering.
 
@@ -120,7 +120,7 @@ groundings.
 
 ---
 
-## Referring expression grounding / energy
+## Localization / energy-based view
 
 Modeling Relationships in Referential Expressions with Compositional Modular
 Networks. [CMN]
@@ -189,7 +189,7 @@ iterate on modeling and learning experiments.
 
 ---
 
-## Synthesis
+## Other applications
 
 Modular Generative Adversarial Networks.
 
@@ -206,3 +206,35 @@ comparable to SOTA; numerical results are better but I don't really know how
 GAN evaluations are supposed to work. In principle you should be able to use
 this to learn sequences of transformations that don't commute, but all the
 experiments in the paper are just adding / removing attributes.
+
+---
+
+Neural modular control for embodied question answering.
+
+Das, Gkioxari, Lee, Parikh and Batra. CoRL 18.
+
+https://arxiv.org/abs/1810.11181
+
+An options model with
+[policy-sketch-style supervision](https://arxiv.org/abs/1611.01796) 
+and modular option parameterizations (which factor out verb--argument
+combinations). Every option is a "flat" function indexed by an embedding that
+takes the current world state onto a next action, but could presumably
+incorporate more internal structure by expressing `go-to[sofa]` with a VQA-style
+`find` module feeding into a controller. Modules are trained with subgoal
+supervision.
+
+---
+
+Visual coreference resolution in visual dialogue using neural module networks.
+
+Kottur, Moura, Parikh, Batra and Rohrbach. ECCV 2018.
+
+https://arxiv.org/abs/1809.01816
+
+N2NMN-style training with supervised attentions and a richer set of primitives
+to support visual dialogue. A `refer` module can grab bounding boxes around
+regions that have previously been attended to. Handles questions like "what else
+is red" by combining this with negation and primitives from previous work. Does
+a pretty good job with off-the-shelf parser layouts, getting then-SOTA results
+on the visual dialogue challenge.
