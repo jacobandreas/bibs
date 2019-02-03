@@ -191,7 +191,7 @@ iterate on modeling and learning experiments.
 
 Systematic Generalization: What is Required and Can It Be Learned?
 
-Bahdanau, et al. ICLR 19.
+Bahdanau et al. ICLR 19.
 
 https://arxiv.org/abs/1811.12889
 
@@ -209,7 +209,7 @@ There's something that feels slightly wrong about the evaluation that's I can't
 quite pin down, but related to the fact that we're looking at robustness to
 shifts in $p(y|x)$ rather than $p(x, y)$ more generally.
 
---
+---
 
 ## Other applications
 
