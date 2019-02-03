@@ -1,6 +1,6 @@
 # NMN and friends
 
-Modular, dynamically-structured neural nets for compositional reasoning.
+Selected papers on modular neural nets for compositional reasoning.
 
 ## Basics
 
