@@ -172,7 +172,7 @@ from the fixed initial layout).
 
 ---
 
-## Interpretability
+## Generalization and interpretability
 
 Transparency by Design: Closing the Gap Between Performance and Interpretability
 in Visual Reasoning. [TbD]
@@ -188,6 +188,28 @@ how the transparency / debuggability of the NMN framework makes it easy to
 iterate on modeling and learning experiments.
 
 ---
+
+Systematic Generalization: What is Required and Can It Be Learned?
+
+Bahdanau, et al. ICLR 19.
+
+https://arxiv.org/abs/1811.12889
+
+Experiments on synthetic data with NMNs and other VQA architectures about who's
+robust to shifts between the training and test distributions. Looking only at
+questions of the form $\exists xy. f_1(x) \land r(x, y) \land f_2(y)$, ask: what
+happens if $y$s are sparse in training (for a given $x$) and $p(y|x)$ shifts for
+the test set? Breaks MAC, RelNet, etc., but NMNs are robust. Interestingly, NMN
+structure discovery methods (like N2NMN with RL) don't work terribly well, but
+fixing a structure and leaving the attentions latent does a good job (suggesting
+that something like a MAC hybrid with a fixed structure might be worth exploring
+further).
+
+There's something that feels slightly wrong about the evaluation that's I can't
+quite pin down, but related to the fact that we're looking at robustness to
+shifts in $p(y|x)$ rather than $p(x, y)$ more generally.
+
+--
 
 ## Other applications
 
