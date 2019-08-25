@@ -2,7 +2,7 @@
 
 Selected papers on modular neural nets for compositional reasoning.
 
-## Basics
+## Framework
 
 Neural Module Networks. [NMN]
 
